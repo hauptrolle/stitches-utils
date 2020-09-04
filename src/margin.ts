@@ -26,7 +26,17 @@ export const mx = (config) => (value) => ({
   marginRight: value,
 });
 
+export const marginX = (config) => (value) => ({
+  marginLeft: value,
+  marginRight: value,
+});
+
 export const my = (config) => (value) => ({
+  marginTop: value,
+  marginBottom: value,
+});
+
+export const marginY = (config) => (value) => ({
   marginTop: value,
   marginBottom: value,
 });

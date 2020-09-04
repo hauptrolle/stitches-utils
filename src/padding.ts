@@ -26,7 +26,17 @@ export const px = (config) => (value) => ({
   paddingRight: value,
 });
 
+export const paddingX = (config) => (value) => ({
+  paddingLeft: value,
+  paddingRight: value,
+});
+
 export const py = (config) => (value) => ({
+  paddingTop: value,
+  paddingBottom: value,
+});
+
+export const paddingY = (config) => (value) => ({
   paddingTop: value,
   paddingBottom: value,
 });
