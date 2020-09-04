@@ -1,6 +1,6 @@
 {
   "name": "stitches-utils",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "Achim Rolle <achim.rolle@googlemail.com>",
   "license": "MIT",
   "main": "lib/index.js",
