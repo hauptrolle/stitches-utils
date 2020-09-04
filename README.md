@@ -61,6 +61,11 @@ export const { styled, css } = createStyled({
 | py, paddingY | paddingTop, paddingBottom                            |
 | br           | borderRadius                                         |
 | btlr         | borderTopLeftRadius                                  |
-| btrr         | borderTopRightRadius                                 |
-| bbrr         | borderBottomRightRadius                              |
 | bblr         | borderBottomLeftRadius                               |
+| w            | width                                                |
+| minW         | minWidht                                             |
+| maxW         | maxWidth                                             |
+| h            | height                                               |
+| minH         | minHeight                                            |
+| maxH         | maxHeight                                            |
+| boxSize      | width, height                                        |
