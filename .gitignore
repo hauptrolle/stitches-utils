@@ -29,6 +29,7 @@ lib/
 dist/
 build/
 .next/
+coverage/
 
 # Serverless generated files
 .serverless/

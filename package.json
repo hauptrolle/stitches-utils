@@ -12,7 +12,8 @@
   "scripts": {
     "build": "tsc && tsc -p tsconfig.esm.json",
     "prebuild": "rm -rf lib && mkdir -p lib",
-    "test": "echo \"No test specified\"",
+    "test": "jest",
+    "test:coverage": "jest --coverage",
     "release": "np --no-2fa"
   },
   "repository": {
@@ -29,14 +30,16 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged"
+      "pre-commit": "pretty-quick --staged && yarn test"
     }
   },
   "devDependencies": {
     "@stitches/react": "^0.0.1",
     "husky": "^4.2.5",
+    "jest": "^26.4.2",
     "prettier": "^2.1.1",
     "pretty-quick": "^3.0.0",
+    "ts-jest": "^26.3.0",
     "typescript": "^4.0.2"
   },
   "peerDependencies": {
