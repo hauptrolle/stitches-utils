@@ -1,42 +1,17 @@
-export const p = (config) => (value) => ({
-  paddingTop: value,
-  paddingBottom: value,
-  paddingLeft: value,
-  paddingRight: value,
-});
+import { composeUtil } from "./utils/composeUtil";
 
-export const pt = (config) => (value) => ({
-  paddingTop: value,
-});
+export const p = composeUtil(
+  "paddingTop",
+  "paddingBottom",
+  "paddingLeft",
+  "paddingRight"
+);
+export const pt = composeUtil("paddingTop");
+export const pr = composeUtil("paddingRight");
+export const pb = composeUtil("paddingBottom");
+export const pl = composeUtil("paddingLeft");
+export const px = composeUtil("paddingLeft", "paddingRight");
+export const py = composeUtil("paddingTop", "paddingBottom");
 
-export const pr = (config) => (value) => ({
-  paddingRight: value,
-});
-
-export const pb = (config) => (value) => ({
-  paddingBottom: value,
-});
-
-export const pl = (config) => (value) => ({
-  paddingLeft: value,
-});
-
-export const px = (config) => (value) => ({
-  paddingLeft: value,
-  paddingRight: value,
-});
-
-export const paddingX = (config) => (value) => ({
-  paddingLeft: value,
-  paddingRight: value,
-});
-
-export const py = (config) => (value) => ({
-  paddingTop: value,
-  paddingBottom: value,
-});
-
-export const paddingY = (config) => (value) => ({
-  paddingTop: value,
-  paddingBottom: value,
-});
+export const paddingX = px;
+export const paddingY = py;

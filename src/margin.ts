@@ -1,42 +1,17 @@
-export const m = (config) => (value) => ({
-  marginTop: value,
-  marginBottom: value,
-  marginLeft: value,
-  marginRight: value,
-});
+import { composeUtil } from "./utils/composeUtil";
 
-export const mt = (config) => (value) => ({
-  marginTop: value,
-});
+export const m = composeUtil(
+  "marginTop",
+  "marginBottom",
+  "marginLeft",
+  "marginRight"
+);
+export const mt = composeUtil("marginTop");
+export const mr = composeUtil("marginRight");
+export const mb = composeUtil("marginBottom");
+export const ml = composeUtil("marginLeft");
+export const mx = composeUtil("marginLeft", "marginRight");
+export const my = composeUtil("marginTop", "marginBottom");
 
-export const mr = (config) => (value) => ({
-  marginRight: value,
-});
-
-export const mb = (config) => (value) => ({
-  marginBottom: value,
-});
-
-export const ml = (config) => (value) => ({
-  marginLeft: value,
-});
-
-export const mx = (config) => (value) => ({
-  marginLeft: value,
-  marginRight: value,
-});
-
-export const marginX = (config) => (value) => ({
-  marginLeft: value,
-  marginRight: value,
-});
-
-export const my = (config) => (value) => ({
-  marginTop: value,
-  marginBottom: value,
-});
-
-export const marginY = (config) => (value) => ({
-  marginTop: value,
-  marginBottom: value,
-});
+export const marginX = mx;
+export const marginY = my;

@@ -1,19 +1,7 @@
-export const br = (config) => (value) => ({
-  borderRadius: value,
-});
+import { composeUtil } from "./utils/composeUtil";
 
-export const btlr = (config) => (value) => ({
-  borderTopLeftRadius: value,
-});
-
-export const btrr = (config) => (value) => ({
-  borderTopRightRadius: value,
-});
-
-export const bbrr = (config) => (value) => ({
-  borderBottomRightRadius: value,
-});
-
-export const bblr = (config) => (value) => ({
-  borderBottomLeftRadius: value,
-});
+export const br = composeUtil("borderRadius");
+export const btlr = composeUtil("borderTopLeftRadius");
+export const btrr = composeUtil("borderTopRightRadius");
+export const bbrr = composeUtil("borderBottomRightRadius");
+export const bblr = composeUtil("borderBottomLeftRadius");
