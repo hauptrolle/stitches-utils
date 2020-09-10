@@ -1,6 +1,6 @@
+import { createCss, createTokens, IAtom } from "@stitches/core";
 import { composeUtil } from "./composeUtil";
 import { testConfig } from "./testUtils";
-import { createCss, createTokens, IAtom } from "@stitches/core";
 
 describe("composeUtil", () => {
   it("should be initiated correctly", () => {
