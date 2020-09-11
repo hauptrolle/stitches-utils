@@ -16,6 +16,19 @@
         "example",
         "review"
       ]
+    },
+    {
+      "login": "braposo",
+      "name": "Bernardo Raposo",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/38172?v=4",
+      "profile": "http://bernardoraposo.com",
+      "contributions": [
+        "code",
+        "doc",
+        "example",
+        "test",
+        "ideas"
+      ]
     }
   ],
   "contributorsPerLine": 7,
