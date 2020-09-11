@@ -1,28 +1,9 @@
-export const w = (config) => (value) => ({
-  width: value,
-});
+import { composeUtil } from "./utils/composeUtil";
 
-export const minW = (config) => (value) => ({
-  minWidth: value,
-});
-
-export const maxW = (config) => (value) => ({
-  maxWidth: value,
-});
-
-export const h = (config) => (value) => ({
-  height: value,
-});
-
-export const minH = (config) => (value) => ({
-  minHeight: value,
-});
-
-export const maxH = (config) => (value) => ({
-  maxHeight: value,
-});
-
-export const boxSize = (config) => (value) => ({
-  width: value,
-  height: value,
-});
+export const w = composeUtil("width");
+export const minW = composeUtil("minWidth");
+export const maxW = composeUtil("maxWidth");
+export const h = composeUtil("height");
+export const minH = composeUtil("minHeight");
+export const maxH = composeUtil("maxHeight");
+export const boxSize = composeUtil("width", "height");

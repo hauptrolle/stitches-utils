@@ -61,7 +61,9 @@ export const { styled, css } = createStyled({
 | py, paddingY | paddingTop, paddingBottom                            |
 | br           | borderRadius                                         |
 | btlr         | borderTopLeftRadius                                  |
+| btrr         | borderTopRightRadius                                 |
 | bblr         | borderBottomLeftRadius                               |
+| bbrr         | borderBottomRightRadius                              |
 | w            | width                                                |
 | minW         | minWidht                                             |
 | maxW         | maxWidth                                             |
@@ -69,3 +71,20 @@ export const { styled, css } = createStyled({
 | minH         | minHeight                                            |
 | maxH         | maxHeight                                            |
 | boxSize      | width, height                                        |
+
+## Custom utils:
+
+It's also possible to build custom utils by using the `composeUtil` function.
+
+```jsx
+import { createStyled } from "@stitches/react";
+import { composeUtil } from "stitches-utils";
+
+const size = composeUtil("width", "height");
+
+export const { styled, css } = createStyled({
+  utils: {
+    size,
+  },
+});
+```
