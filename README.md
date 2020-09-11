@@ -1,6 +1,6 @@
 # stitches-utils
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 > Helpful stitches utilities like `marginY`, `marginX` etc. combined in one package
@@ -102,6 +102,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <table>
   <tr>
     <td align="center"><a href="http://www.hauptrolle.me"><img src="https://avatars0.githubusercontent.com/u/1164541?v=4" width="100px;" alt=""/><br /><sub><b>Achim Rolle</b></sub></a><br /><a href="https://github.com/hauptrolle/stitches-utils/commits?author=hauptrolle" title="Code">💻</a> <a href="https://github.com/hauptrolle/stitches-utils/commits?author=hauptrolle" title="Documentation">📖</a> <a href="#example-hauptrolle" title="Examples">💡</a> <a href="https://github.com/hauptrolle/stitches-utils/pulls?q=is%3Apr+reviewed-by%3Ahauptrolle" title="Reviewed Pull Requests">👀</a></td>
+    <td align="center"><a href="http://bernardoraposo.com"><img src="https://avatars2.githubusercontent.com/u/38172?v=4" width="100px;" alt=""/><br /><sub><b>Bernardo Raposo</b></sub></a><br /><a href="https://github.com/hauptrolle/stitches-utils/commits?author=braposo" title="Code">💻</a> <a href="https://github.com/hauptrolle/stitches-utils/commits?author=braposo" title="Documentation">📖</a> <a href="#example-braposo" title="Examples">💡</a> <a href="https://github.com/hauptrolle/stitches-utils/commits?author=braposo" title="Tests">⚠️</a> <a href="#ideas-braposo" title="Ideas, Planning, & Feedback">🤔</a></td>
   </tr>
 </table>
 
