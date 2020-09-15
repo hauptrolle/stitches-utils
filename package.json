@@ -14,7 +14,7 @@
     "prebuild": "rm -rf lib && mkdir -p lib",
     "test": "jest",
     "test:coverage": "jest --coverage",
-    "release": "np --no-2fa"
+    "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
   },
   "repository": {
     "type": "git",
@@ -30,11 +30,16 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "pretty-quick --staged && yarn test"
+      "pre-commit": "pretty-quick --staged && yarn lint && yarn test"
     }
   },
   "devDependencies": {
     "@stitches/core": "^0.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
     "husky": "^4.3.0",
     "jest": "^26.4.2",
     "prettier": "^2.1.1",
